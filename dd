@@ -136,3 +136,23 @@ def test_problem_0303(monkeypatch: MonkeyPatch):
     assert mocked_stdout.getvalue().strip() == "Assento premium"
 
 
+
+def main(horas, tipo):
+    if tipo == "M":
+        if horas <= 5:
+            return horas * 2
+        else:
+            return horas * 3
+
+    elif tipo == "P":
+        if horas <= 10:
+            return horas * 5
+        else:
+            return horas * 7
+
+    elif tipo == "C":
+        if horas <= 8:
+            return horas * 8
+        else:
+            return horas * 10
+
