@@ -67,3 +67,13 @@ def test_problem_0303(monkeypatch: MonkeyPatch):
         importlib.import_module(name="problem_03", package="")
 
     assert mocked_stdout.getvalue().strip() == "Assento premium"
+
+
+assento = input()
+
+letra = assento[0].upper()
+
+if letra in "AEIOU":
+    print("Assento premium")
+else:
+    print("Assento regular")
