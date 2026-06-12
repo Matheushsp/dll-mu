@@ -1,1 +1,55 @@
 https://drive.google.com/drive/u/0/folders/1mWOrbqyMelBG7Crd4VvUWeMxN6sehgUn
+function main(horas, tipo) {
+  let valorHora = 0;
+
+  if (tipo === "M") {
+    if (horas <= 5) {
+      valorHora = 2;
+    } else {
+      valorHora = 3;
+    }
+  } else if (tipo === "P") {
+    if (horas <= 10) {
+      valorHora = 5;
+    } else {
+      valorHora = 7;
+    }
+  } else if (tipo === "C") {
+    if (horas <= 8) {
+      valorHora = 8;
+    } else {
+      valorHora = 10;
+    }
+
+function main(assento) {
+  let letra = assento[0].toUpperCase();
+
+  if (
+    letra === "A" ||
+    letra === "E" ||
+    letra === "I" ||
+    letra === "O" ||
+    letra === "U"
+  ) {
+    return "Assento premium";
+  } else {
+    return "Assento regular";
+  }
+}
+  }
+
+  return horas * valorHora;
+}
+
+
+function main() {
+  let produto = 1;
+
+  for (let i = 1; i <= 10; i++) {
+    let numero = Number(prompt("Digite um número:"));
+    produto = produto * numero;
+  }
+
+  return produto;
+}
+
